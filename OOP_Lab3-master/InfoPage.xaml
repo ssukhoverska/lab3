@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab3.InfoPage"
+             Title="Information about the program">
+    <VerticalStackLayout
+        VerticalOptions="Center">
+        <Label 
+            Text="Всім привіт"
+            FontSize="25"
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Це програма обробки файлів у форматі JSON."
+            FontSize="20"
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Розробила Петрачкова Олена, 2 курс, група К-26, 2023 рік."
+            FontSize="20"
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Всім дякую за увагу!"
+            FontSize="20"
+            HorizontalOptions="Center"/>
+        <Button
+            x:Name="MainPageBtn"
+            Text="Go to home page"
+            Clicked="MainPageClicked"
+            WidthRequest="160"
+            HorizontalOptions="Center"
+            Margin="0,60,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

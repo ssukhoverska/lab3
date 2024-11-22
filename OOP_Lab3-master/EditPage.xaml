@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab3.EditPage"
+             Title="Edit data page">
+    <ScrollView>
+        <StackLayout
+         Spacing="10"
+         Padding="10,0"
+         VerticalOptions="Center"
+         HorizontalOptions="Center">
+            <StackLayout 
+                Orientation="Horizontal"
+                Margin="20, 0, 0 ,0">
+                <Label 
+                    Text="Title"
+                    FontSize="15"
+                    FontAttributes="Bold"/>
+                <Label 
+                    Text="Edition"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="580, 0, 0 ,0"/>
+            </StackLayout>
+            <StackLayout 
+                 Orientation="Horizontal" 
+                 Margin="20, 0, 0 ,0">
+                <Entry 
+                    x:Name="titleEntry"
+                    FontSize="15"
+                    WidthRequest="300"/>
+                <Entry 
+                    x:Name="editionEntry"
+                    FontSize="15"
+                    Margin="310, 0, 0 ,0"
+                    WidthRequest="300"/>
+            </StackLayout>
+            <StackLayout 
+                 Orientation="Horizontal" 
+                 Margin="20, 20, 0 ,0">
+                <Label 
+                    Text="Author"
+                    FontSize="15"
+                    FontAttributes="Bold"/>
+                <Label 
+                    Text="Genre"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="560, 0, 0 ,0"/>
+            </StackLayout>
+            <StackLayout 
+                 Orientation="Horizontal" 
+                 Margin="20, 0, 0 ,0">
+                <Entry 
+                    x:Name="authorEntry"
+                    FontSize="15"
+                    WidthRequest="300"/>
+                <Entry 
+                    x:Name="genreEntry"
+                    FontSize="15"
+                    Margin="311, 0, 0 ,0"
+                    WidthRequest="300"/>
+            </StackLayout>
+            <StackLayout 
+                 Orientation="Horizontal" 
+                 Margin="20, 20, 0 ,0">
+                <Label 
+                    Text="Year of release"
+                    FontAttributes="Bold"
+                    FontSize="15"/>
+            </StackLayout>
+            <StackLayout 
+                 Orientation="Horizontal" 
+                 Margin="20, 0, 0 ,0">
+                <Entry 
+                    x:Name="yearEntry"
+                    FontSize="15"
+                    WidthRequest="300"/>
+            </StackLayout>
+            <StackLayout 
+                Orientation="Horizontal" 
+                Margin="20, 55, 0 ,0">
+                <Button
+                   x:Name="AddBookBth"
+                   Text="AddBook"
+                   Clicked="AddBookButtonClicked"/>
+                <Button
+                   x:Name="EditDataBtn"
+                   Text="Edit data"
+                   Clicked="EditBookButtonClicked"
+                   Margin="40, 0, 0, 0"/>
+                <Label 
+                    Text="Search"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="490, 0, 0, 0"/>
+            </StackLayout>
+            <StackLayout 
+                Orientation="Horizontal" 
+                Margin="20, 10, 0 ,0">
+                <Label 
+                    Text="Title"
+                    FontSize="15"
+                    Margin="620, 10, 0, 0"/>
+                <Picker 
+                     x:Name="TitlePicker"
+                     Margin="77, 0, 0, 0"
+                     WidthRequest="150"/>
+            </StackLayout>
+            <StackLayout 
+                Orientation="Horizontal" 
+                Margin="20, 20, 0 ,0">
+                <Button
+                     x:Name="SearchBtn"
+                     Text="Search"
+                     Clicked="SearchButtonClicked"
+                     Margin="650, 0, 0, 0"/>
+                <Button
+                     x:Name="ClearBtn"
+                     Text="Clear"
+                     Clicked="ClearButtonClicked"
+                     Margin="52, 0, 0, 0"/>
+            </StackLayout>
+            <StackLayout
+                Orientation="Horizontal" 
+                Margin="20, 20, 0 ,0">
+                <Button
+                    x:Name="HomeBtn"
+                    Text="Go to home page"
+                    Clicked="MainPageClicked"
+                    WidthRequest="150"
+                    HorizontalOptions="Start"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
